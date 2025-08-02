@@ -1,0 +1,33 @@
+{
+    "name": "lento/bakery",
+    "type": "project",
+    "scripts": {
+        "start:dev": "php -S localhost:8002 src/index.php"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../LentoApi",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "lento/api": "dev-main",
+        "illuminate/database": "^12.20",
+        "monolog/monolog": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bakery\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LentoLeisenfeld",
+            "email": "lento@leisenfeld.com"
+        }
+    ]
+}
